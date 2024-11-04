@@ -1,5 +1,5 @@
 import numpy as np
-def random_predict(number: int=1) -> int:
+def random_predict(number: int) -> int:
     """Рандомно угадываем число
 
     Args:
@@ -19,7 +19,4 @@ def random_predict(number: int=1) -> int:
 
 print(f'Отгадали число за {random_predict()} попыток')
 
-a = 1 + 2
-print(a)
 
-b = 1 + a
