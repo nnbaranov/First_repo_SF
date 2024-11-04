@@ -1,25 +1,20 @@
 import numpy as np
-def random_predict(number: int=1) -> int:
-    """Рандомно угадываем число
+number = np.random.randint(1, 101) # загадываем число
+count = 0
 
-    Args:
-        number (int, optional): Загаданное число. Defaults to 1.
+while True:
+    count += 1
+    predict_number = int(input("Угадай число от 1 до 100"))
 
-    Returns:
-        int: попыток 
-    """
-    count = 0 
+    if predict_number > number:
+        print("Число должно быть меньше!")
+
+    elif predict_number < number:
+        print("Число должно быть больше!")
+
+    else:
+        print(f"Вы угадали число! Это число = {number}, за {count} попыток")
+        break # конец игры, выход из цикла
     
-    while True:
-        count += 1 
-        predict_number = np.random.randint(1, 100)
-        if number == predict_number:
-            break
-    return count
-
-print(f'Отгадали число за {random_predict()} попыток')
-
-a = 1 + 2
-print(a)
-
-b = 1 + a
+    
+    
