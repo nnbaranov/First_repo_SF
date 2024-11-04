@@ -22,4 +22,4 @@ print(f'Отгадали число за {random_predict()} попыток')
 a = 1 + 2
 print(a)
 
-        
+b = 1 + a
